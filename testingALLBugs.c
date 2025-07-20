@@ -85,9 +85,18 @@ int main() {
     loadUsers();
     srand(time(0));
     clearScreen();
-    printf(BOLD CYAN "\n=== Welcome to HybridOS ===\n" RESET);
-    printf(YELLOW "A Simulated Operating System\n" RESET);
-    printf("Press any key to continue.\n");
+    printf(BOLD CYAN "\n\t\t\t=== Welcome to HybridOS ===\n" RESET);
+    printf("\n");
+    printf(BOLD CYAN"\t\t  ¦¦¦+   ¦¦¦   +¦¦+   ¦¦¦+   ¦¦+   ¦¦+     ¦¦¦¦¦¦+    ¦¦¦¦¦¦¦+\n "RESET);
+    printf(BOLD CYAN"\t\t  ¦¦¦¦+ ¦¦¦¦   ¦¦¦¦   ¦¦¦¦+  ¦¦¦   ¦¦¦    ¦¦+---¦¦+   ¦¦+----+\n "RESET);
+    printf(BOLD CYAN"\t\t  ¦¦+¦¦¦¦+¦¦   ¦¦¦¦   ¦¦+¦¦+ ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   ¦¦¦¦¦¦¦+\n "RESET);
+    printf(BOLD CYAN"\t\t  ¦¦¦+¦¦++¦¦   ¦¦¦¦   ¦¦¦+¦¦+¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   +----¦¦¦\n "RESET);
+    printf(BOLD CYAN"\t\t  ¦¦¦ +-+ ¦¦   ¦¦¦¦   ¦¦¦ +¦¦¦¦¦   ¦¦¦    +¦¦¦¦¦¦++   ¦¦¦¦¦¦¦¦\n "RESET);
+    printf(BOLD CYAN"\t\t  +-+     ++   -++-+  -+-+  +--+   +-+     +-----+    +------+\n "RESET);
+    printf("\n");
+    printf(YELLOW" \t\t                  Mini Operating System v1.0\n"RESET);
+    printf(YELLOW"\t\t                    Booting system...\n\n"RESET);
+    printf("Press any key to Continue.\n");
     getch();
 
     int choice;
