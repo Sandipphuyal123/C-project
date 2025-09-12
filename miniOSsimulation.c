@@ -36,7 +36,7 @@ typedef struct {
     char username[Total_userName_length];
 } User;
 
-// Global variables
+// ==================================================GLOBAL VARIABLES=================================================================
 User users_arr[Total_users];
 int totalUserCount = 0;
 char currentUser[Total_userName_length] = "";
@@ -44,7 +44,7 @@ char currentPath[Total_absolutePath_length] = "";
 char history[MAX_HISTORY][MAX_CMD_LEN];
 int history_count = 0;
 
-// Function prototypes
+// ================================= FUNCTION PROTOTYPE===========================================================================
 void loadUsers();
 void saveUsers();
 void clearScreen();
@@ -80,6 +80,7 @@ void createFile();
 void modifyFile();
 void deleteFile();
 void viewFile();
+//====================================================================  INT MAIN IS HERE============================================================
 
 int main() {
     loadUsers();
@@ -138,7 +139,7 @@ int main() {
 
     return 0;
 }
-
+//This clears the screen with the help of the headerfile stdlib.h
 void clearScreen() {
     system("cls");
 }
@@ -146,9 +147,10 @@ void clearScreen() {
 void bufferClear() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {
-        // Clear buffer
+        //This does nothing except of eating the characters from c
     }
     if (c == EOF) {
+        //This reset the endofthefile state to the original
         clearerr(stdin);
     }
 }
@@ -156,8 +158,8 @@ void bufferClear() {
 void maskPassword(char *password, int maxLength) {
     int i = 0;
     char ch;
-    while ((ch = getch()) != '\r' && i < maxLength - 1) {
-        if (ch == '\b') {
+    while ((ch = getch()) != '\r' && i < maxLength - 1) {// '\r' means enter key or \n key in c programming
+        if (ch == '\b') {// '\b' is Backspace so we can simulate the edits of the text in * format
             if (i > 0) {
                 i--;
                 printf("\b \b");
@@ -205,6 +207,7 @@ void saveUsers() {
 
 void registerUser() {
     clearScreen();
+    //This checks if the registered user have exceed their 
     if (totalUserCount >= Total_users) {
         printf(RED "Maximum number of users reached!\n" RESET);
         printf("Press any key to continue.\n");
@@ -225,7 +228,7 @@ void registerUser() {
         return;
     }
     username[strcspn(username, "\n")] = '\0';
-
+    // This block Checks if username already exists
     for (i = 0; i < totalUserCount; i++) {
         if (strcmp(users_arr[i].username, username) == 0) {
             printf(RED "Username already exists!\n" RESET);
@@ -244,7 +247,7 @@ void registerUser() {
         getch();
         return;
     }
-
+    // Simulated a absolute file path so commands like cd work
     snprintf(filePath, Total_absolutePath_length, "%s\\impFile.txt", username);
     FILE *file = fopen(filePath, "w");
     if (file == NULL) {
@@ -474,7 +477,7 @@ void quizGame() {
     printf("Press any key to return.\n");
     getch();
 }
-
+// =================================Tic-Tac-Toe game===========================================================================
 void ticTacToe() {
     char board[3][3];
     int row, col;
@@ -583,7 +586,7 @@ void ticTacToe() {
         player = (player == 'X') ? 'O' : 'X';
     }
 }
-
+// ================================= \\\Calculator\\\ ===========================================================================
 void calculator() {
     double num1, num2, result;
     char op;
@@ -654,7 +657,7 @@ void calculator() {
         getch();
     }
 }
-
+// =================================  Notes app (simulated)===========================================================================
 void notesApp() {
     int choice;
     do {
