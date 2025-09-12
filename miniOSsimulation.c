@@ -87,11 +87,11 @@ int main() {
     clearScreen();
     printf(BOLD CYAN "\n\t\t\t=== Welcome to HybridOS ===\n" RESET);
     printf("\n");
-    printf(BOLD CYAN"\t\t  ¦¦¦+   ¦¦¦   +¦¦+   ¦¦¦+   ¦¦+   ¦¦+     ¦¦¦¦¦¦+    ¦¦¦¦¦¦¦+\n "RESET);
-    printf(BOLD CYAN"\t\t  ¦¦¦¦+ ¦¦¦¦   ¦¦¦¦   ¦¦¦¦+  ¦¦¦   ¦¦¦    ¦¦+---¦¦+   ¦¦+----+\n "RESET);
-    printf(BOLD CYAN"\t\t  ¦¦+¦¦¦¦+¦¦   ¦¦¦¦   ¦¦+¦¦+ ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   ¦¦¦¦¦¦¦+\n "RESET);
-    printf(BOLD CYAN"\t\t  ¦¦¦+¦¦++¦¦   ¦¦¦¦   ¦¦¦+¦¦+¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   +----¦¦¦\n "RESET);
-    printf(BOLD CYAN"\t\t  ¦¦¦ +-+ ¦¦   ¦¦¦¦   ¦¦¦ +¦¦¦¦¦   ¦¦¦    +¦¦¦¦¦¦++   ¦¦¦¦¦¦¦¦\n "RESET);
+    printf(BOLD CYAN"\t\t  Â¦Â¦Â¦+   Â¦Â¦Â¦   +Â¦Â¦+   Â¦Â¦Â¦+   Â¦Â¦+   Â¦Â¦+     Â¦Â¦Â¦Â¦Â¦Â¦+    Â¦Â¦Â¦Â¦Â¦Â¦Â¦+\n "RESET);
+    printf(BOLD CYAN"\t\t  Â¦Â¦Â¦Â¦+ Â¦Â¦Â¦Â¦   Â¦Â¦Â¦Â¦   Â¦Â¦Â¦Â¦+  Â¦Â¦Â¦   Â¦Â¦Â¦    Â¦Â¦+---Â¦Â¦+   Â¦Â¦+----+\n "RESET);
+    printf(BOLD CYAN"\t\t  Â¦Â¦+Â¦Â¦Â¦Â¦+Â¦Â¦   Â¦Â¦Â¦Â¦   Â¦Â¦+Â¦Â¦+ Â¦Â¦Â¦   Â¦Â¦Â¦    Â¦Â¦Â¦   Â¦Â¦Â¦   Â¦Â¦Â¦Â¦Â¦Â¦Â¦+\n "RESET);
+    printf(BOLD CYAN"\t\t  Â¦Â¦Â¦+Â¦Â¦++Â¦Â¦   Â¦Â¦Â¦Â¦   Â¦Â¦Â¦+Â¦Â¦+Â¦Â¦Â¦   Â¦Â¦Â¦    Â¦Â¦Â¦   Â¦Â¦Â¦   +----Â¦Â¦Â¦\n "RESET);
+    printf(BOLD CYAN"\t\t  Â¦Â¦Â¦ +-+ Â¦Â¦   Â¦Â¦Â¦Â¦   Â¦Â¦Â¦ +Â¦Â¦Â¦Â¦Â¦   Â¦Â¦Â¦    +Â¦Â¦Â¦Â¦Â¦Â¦++   Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n "RESET);
     printf(BOLD CYAN"\t\t  +-+     ++   -++-+  -+-+  +--+   +-+     +-----+    +------+\n "RESET);
     printf("\n");
     printf(YELLOW" \t\t                  Mini Operating System v1.0\n"RESET);
