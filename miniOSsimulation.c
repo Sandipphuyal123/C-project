@@ -98,6 +98,8 @@ int main() {
     printf(YELLOW" \t\t                  Mini Operating System v1.0\n"RESET);
     printf(YELLOW"\t\t                    Booting system...\n\n"RESET);
     printf("Press any key to Continue.\n");
+//    printf(YELLOW "A Simulated Operating System\n" RESET);
+//    printf("Press any key to continue.\n");
     getch();
 
     int choice;
@@ -207,7 +209,7 @@ void saveUsers() {
 
 void registerUser() {
     clearScreen();
-    //This checks if the registered user have exceed their 
+    //This checks if the registered user have exceed their ......
     if (totalUserCount >= Total_users) {
         printf(RED "Maximum number of users reached!\n" RESET);
         printf("Press any key to continue.\n");
@@ -258,7 +260,7 @@ void registerUser() {
     }
     fprintf(file, "Username: %s\nPassword: %s\n", username, password);
     fclose(file);
-
+	// adds new registered user to the global array
     strncpy(users_arr[totalUserCount].username, username, Total_userName_length - 1);
     users_arr[totalUserCount].username[Total_userName_length - 1] = '\0';
     totalUserCount++;
@@ -478,6 +480,7 @@ void quizGame() {
     getch();
 }
 // =================================Tic-Tac-Toe game===========================================================================
+
 void ticTacToe() {
     char board[3][3];
     int row, col;
@@ -587,6 +590,7 @@ void ticTacToe() {
     }
 }
 // ================================= \\\Calculator\\\ ===========================================================================
+
 void calculator() {
     double num1, num2, result;
     char op;
@@ -658,6 +662,7 @@ void calculator() {
     }
 }
 // =================================  Notes app (simulated)===========================================================================
+
 void notesApp() {
     int choice;
     do {
